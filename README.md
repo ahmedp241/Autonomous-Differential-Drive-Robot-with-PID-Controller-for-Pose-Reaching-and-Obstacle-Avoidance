@@ -88,7 +88,6 @@ The **Ziegler-Nichols** method is a widely used approach for tuning PID controll
 
 ## Controller Types and PID Gains
 
-## Controller Types and PID Gains
 
 The following table summarizes the PID gains for different controller types based on the Ziegler-Nichols method. The formulas for each type of controller are calculated using the **KU** (ultimate gain) and **TU** (oscillation period) values.
 
