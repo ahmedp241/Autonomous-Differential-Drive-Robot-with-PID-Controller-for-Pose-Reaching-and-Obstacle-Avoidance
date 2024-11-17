@@ -13,6 +13,9 @@ The goal is to move a robot from its current pose `(x, y, θ)` to a desired pose
 1. Moving from the current pose to the desired pose.
 2. Avoiding obstacles during navigation.
 
+![rrrrr](https://github.com/user-attachments/assets/c52a0cde-7877-43fa-859a-25e6c46e1c61)
+
+
 ---
 
 ## **Objectives**  
@@ -128,6 +131,7 @@ The Arduino implementation manages sensor readings, control commands, and motor 
 ---
 
 ### **Mathematical Modeling for Pose Estimation**  
+![repere](https://github.com/user-attachments/assets/1da55052-ee9a-498a-aa67-a32a082c8279)
 
 #### **1. Linear Velocity Calculation**  
 To calculate the robot's linear velocity `v`, we take the average of the left (`ω_l`) and right (`ω_r`) wheel velocities:
