@@ -136,7 +136,10 @@ The Arduino implementation manages sensor readings, control commands, and motor 
 ---
 
 ### **Mathematical Modeling for Pose Estimation**  
+
+
 ![repere](https://github.com/user-attachments/assets/1da55052-ee9a-498a-aa67-a32a082c8279)
+
 
 #### **1. Linear Velocity Calculation**  
 To calculate the robot's linear velocity `v`, we take the average of the left (`ω_l`) and right (`ω_r`) wheel velocities:
