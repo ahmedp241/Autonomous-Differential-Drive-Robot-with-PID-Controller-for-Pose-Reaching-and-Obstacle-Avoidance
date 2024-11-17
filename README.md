@@ -132,7 +132,8 @@ The Arduino implementation manages sensor readings, control commands, and motor 
 #### **1. Linear Velocity Calculation**  
 To calculate the robot's linear velocity `v`, we take the average of the left (`ω_l`) and right (`ω_r`) wheel velocities:
 
-\[ v = \frac{R}{2} (\omega_r + \omega_l) \]
+$v = \frac{R}{2} (\omega_r + \omega_l)$
+
 
 Where:
 - `R` is the radius of the wheels.
