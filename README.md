@@ -4,7 +4,7 @@
 ---
 
 ## **Abstract**  
-This project implements an autonomous differential-drive robot capable of navigating to a desired pose while avoiding obstacles in real time. The system integrates hardware control through Arduino and a simulation environment developed in MATLAB/Simulink for validation. It leverages sensor inputs for obstacle detection and calculates dynamic trajectories to achieve precise navigation. This hybrid approach ensures robust and efficient performance suitable for educational and practical robotics applications.
+This project focuses on the design and implementation of a differential-drive autonomous robot. The robot uses a PID controller for pose control, ensuring precise movement and orientation, alongside a distinct obstacle avoidance algorithm to navigate around obstacles. The control systems are integrated on an Arduino platform, with real-time feedback from sensors. Simulink models and MATLAB simulations are used to model and analyze the system, incorporating the Nichols-Ziegler method for tuning the controllers. The repository offers a comprehensive guide to hardware setup, software implementation, control algorithm design, and performance analysis for autonomous robot navigation.
 
 ---
 
