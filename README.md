@@ -39,18 +39,23 @@ The project comprises three main components:
 - **1 Ultrasonic Sensor**: For obstacle detection.  
 - **1 Servo Motor**: For sensor angular movement.  
 - **2 Angular Speed Encoders**: For feedback on wheel rotation.  
-- **Chassis**: The robot’s physical structure.  
+- **Chassis**: The robot’s physical structure.
+
+  ![circuit_image](https://github.com/user-attachments/assets/c65ce24e-d90a-46b6-bbab-fab3e76405d3)
+
 
 **Robot Specifications**:
 - **Battery Type**: Lithium Iron Phosphate (LiFePO₄), known for its long cycle life, safety, and thermal stability.  
 - **Dimensions**: Robot height: 50 cm, diameter: 55 cm.  
 - **Wheel Radius**: 12.7 cm, facilitating smooth movement.  
 - **Axle Distance (L)**: 500 mm, influencing the turning radius and maneuverability.
+  ![image](https://github.com/user-attachments/assets/5e4d70cd-4f03-46ce-afd6-6b70cd64701b)
+
 
 #### **2. Software System**  
 - **MATLAB/Simulink**: Used for simulating the pose-reaching controller model and system response.  
 - **Arduino IDE**: For microcontroller programming and real-time implementation.  
-- **Servo Motor Library**: For controlling the servo motor in Arduino.
+- **Servo Motor Library**: For controlling the servo motor in Arduino.(Servo.h)
 
 #### **3. Dynamic Navigation Algorithms**  
 - **Simulink Differential Kinematics**: For pose calculation.  
