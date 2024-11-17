@@ -81,6 +81,28 @@ The project comprises three main components:
 3. **Modeling Phase**:
    - Model system dynamics and DC motors.
    - Implement the Nicolas-Ziegler algorithm for tuning PID parameters.
+  
+# Ziegler-Nichols PID Tuning Method
+
+The **Ziegler-Nichols** method is a widely used approach for tuning PID controllers, which calculates the optimal PID gains based on the ultimate gain (**KU**) and the oscillation period (**TU**) observed in the system. The method provides different PID configurations for various types of systems, ensuring effective control performance.
+
+## Controller Types and PID Gains
+
+Below is a table showing the PID gains for different controller types according to the Ziegler-Nichols method:
+
+```matlab
+% Controller Types and PID Gain Calculations
+% ------------------------------------------
+% Controller Type        | KP Formula      | TI Formula         | TD Formula
+% -----------------------|-----------------|--------------------|---------------------
+% ClassicPID             | 0.6 * KU        | TU / 2             | TU / 8
+% P                      | 0.5 * KU        | NaN                | NaN
+% PI                     | 0.45 * KU       | TU / 1.2           | NaN
+% PD                     | 0.8 * KU        | NaN                | TU / 8
+% PessenIntegrationRule  | 0.7 * KU        | 2 * TU / 5         | 3 * TU / 20
+% SomeOvershoot          | KU / 3          | TU / 2             | TU / 3
+% NoOvershoot            | 0.2 * KU        | TU / 2             | TU / 3
+
 
 4. **Simulation Phase**:
    - Define target pose and simulate robot motion in MATLAB/Simulink.
