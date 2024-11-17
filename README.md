@@ -142,7 +142,7 @@ Where:
 #### **2. Angular Velocity Calculation**  
 To calculate the robot's angular velocity `θ̇`:
 
-\[ \dot{\theta} = \frac{R}{L} (\omega_r - \omega_l) \]
+$\[ \dot{\theta} = \frac{R}{L} (\omega_r - \omega_l) \]$
 
 Where:
 - `L` is the distance between the left and right wheels (the wheelbase).
@@ -153,19 +153,19 @@ To update the robot’s position and orientation, we use the following equations
 
 - **Position Update**:  
   - In the X-direction:  
-    \[ \Delta x = v \cdot \cos(\theta) \cdot \Delta t \]
+    $\[ \Delta x = v \cdot \cos(\theta) \cdot \Delta t \]$
   - In the Y-direction:  
-    \[ \Delta y = v \cdot \sin(\theta) \cdot \Delta t \]
+    $\[ \Delta y = v \cdot \sin(\theta) \cdot \Delta t \]$
 
 - **Orientation Update**:  
   - In the θ-direction:  
-    \[ \Delta \theta = \dot{\theta} \cdot \Delta t \]
+    $\[ \Delta \theta = \dot{\theta} \cdot \Delta t \]$
 
 #### **4. Final Pose Update Equation**  
 The final updated pose after integrating the above components:
 
 - **Position**:  
-  \[ x_{new} = x_{old} + v \cdot \cos(\theta) \cdot \Delta t \]  
-  \[ y_{new} = y_{old} + v \cdot \sin(\theta) \cdot \Delta t \]  
+  $\[ x_{new} = x_{old} + v \cdot \cos(\theta) \cdot \Delta t \] $ 
+  $\[ y_{new} = y_{old} + v \cdot \sin(\theta) \cdot \Delta t \] $ 
 
 This model helps track the robot's movements and ensures accurate pose updates for navigation.
