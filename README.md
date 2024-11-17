@@ -88,20 +88,20 @@ The **Ziegler-Nichols** method is a widely used approach for tuning PID controll
 
 ## Controller Types and PID Gains
 
-Below is a table showing the PID gains for different controller types according to the Ziegler-Nichols method:
+## Controller Types and PID Gains
 
-```matlab
-% Controller Types and PID Gain Calculations
-% ------------------------------------------
-% Controller Type        | KP Formula      | TI Formula         | TD Formula
-% -----------------------|-----------------|--------------------|---------------------
-% ClassicPID             | 0.6 * KU        | TU / 2             | TU / 8
-% P                      | 0.5 * KU        | NaN                | NaN
-% PI                     | 0.45 * KU       | TU / 1.2           | NaN
-% PD                     | 0.8 * KU        | NaN                | TU / 8
-% PessenIntegrationRule  | 0.7 * KU        | 2 * TU / 5         | 3 * TU / 20
-% SomeOvershoot          | KU / 3          | TU / 2             | TU / 3
-% NoOvershoot            | 0.2 * KU        | TU / 2             | TU / 3
+The following table summarizes the PID gains for different controller types based on the Ziegler-Nichols method. The formulas for each type of controller are calculated using the **KU** (ultimate gain) and **TU** (oscillation period) values.
+
+| **Controller Type**       | **Description**                                               | **KP**          | **TI**           | **TD**           |
+|---------------------------|---------------------------------------------------------------|-----------------|------------------|------------------|
+| **ClassicPID**             | Standard PID controller with typical settings for balanced control. | 0.6 * KU        | TU / 2           | TU / 8           |
+| **P**                      | Only Proportional control (no integral or derivative action).  | 0.5 * KU        | NaN              | NaN              |
+| **PI**                     | Proportional-Integral controller for systems that need integral action. | 0.45 * KU       | TU / 1.2         | NaN              |
+| **PD**                     | Proportional-Derivative controller for systems needing derivative action. | 0.8 * KU        | NaN              | TU / 8           |
+| **PessenIntegrationRule**  | A variant rule for more aggressive tuning.                    | 0.7 * KU        | 2 * TU / 5       | 3 * TU / 20      |
+| **SomeOvershoot**          | PID tuning for systems where some overshoot is acceptable.    | KU / 3          | TU / 2           | TU / 3           |
+| **NoOvershoot**            | PID tuning for systems where minimal overshoot is desired.   | 0.2 * KU        | TU / 2           | TU / 3           |
+
 
 
 4. **Simulation Phase**:
